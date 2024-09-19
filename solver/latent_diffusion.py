@@ -304,8 +304,6 @@ class DreamSamplerEdit(BaseDDIM):
         Image editing via DDS.
         prompt[0] is null text, prompt[1] is source text, prompt[2] is target text.
         """
-        update = kwargs.get('update_range', lambda x: True)
-        show = kwargs.get('display', True)
         
         # Text embedding
         uc, src_c = self.get_text_embed(null_prompt=prompt[0], prompt=prompt[1])
@@ -313,7 +311,7 @@ class DreamSamplerEdit(BaseDDIM):
         
         # Initialize zT
         zt = self.initialize_latent(method='ddim', src_img=src_img,
-                                    uc=uc, c=src_c, cfg_guidance=cfg_guidance)
+                                    uc=uc, c=src_c, cfg_guidance=0.0)
 
         # Sampling
         pbar = tqdm(self.scheduler.timesteps, desc="DreamSampler-Edit")
