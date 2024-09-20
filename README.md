@@ -17,10 +17,37 @@ In this paper, we introduce a novel framework called *DreamSampler* which seamle
 
 ## Setup
 
-First, clone this repository and run the following comment.
+First, clone this repository.
+
+```
+git clone https://github.com/DreamSampler/dream-sampler.git
+cd dream-sampler
+```
+
+You need to clone submodules.
+
+```
+git submodules init
+git submodules update
+```
+
+Then, install the required packages.
+
 
 ```
 conda env create -f environment.yaml
+```
+
+Finally, install CLIP via pip.
+
+```
+pip install -e CLIP/
+```
+
+Now, you can use conda environment.
+
+```
+conda activate dream-sampler
 ```
 
 
