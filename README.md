@@ -27,8 +27,8 @@ cd dream-sampler
 You need to clone submodules.
 
 ```
-git submodules init
-git submodules update
+git submodule init
+git submodule update
 ```
 
 Then, install the required packages.
