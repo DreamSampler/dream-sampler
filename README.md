@@ -4,7 +4,7 @@
 ![Main](assets/main.png)
 
 
-This is the official implementation of the DreamSampler (ECCV24), led by
+This is the official implementation of the DreamSampler (ECCV24), jointly led by
 [Jeongsol Kim*](https://jeongsol.dev/), [Geon Yeong Park*](https://geonyeong-park.github.io/) and [Jong Chul Ye](https://bispl.weebly.com/professor.html)
 
 Thanks for waiting and sorry for the delayed sharing codebase.
